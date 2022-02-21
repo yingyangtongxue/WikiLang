@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: GrammarPage
+  },
+  {
+    path: 'chinese-grammar',
+    loadChildren: () => import('./chinese-grammar/chinese-grammar.module').then( m => m.ChineseGrammarPageModule)
   }
 ];
 
